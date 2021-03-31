@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>1</title>
+<link rel="stylesheet" href="bootstrap-4.4.1/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap-4.4.1/css/bootstrap.min.css">
+
+<style>
+
+
+@font-face {
+font-family: HP;
+src: url(fonts/10467.ttf);
+}
+.p-0 {
+padding: 0;
+}
+.less {
+background-color: #eee;
+height: auto;
+float: left; 
+min-height: 100%; 
+
+display: table; 
+padding-top: 15px;
+padding-bottom: 20px;
+}
+.colored {
+border: 1px solid white;
+}
+.colored:hover {
+background-color: #F4F4F4;
+border: 1px solid #D9D9D9;
+}
+.colored img {
+padding: 15px;
+}
+
+.colored:hover h3 {
+	display: inline-block;
+    position:relative;
+}
+.colored:hover h3:after {
+    display: block;
+	background-color: #D9D9D9;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    transition: width .3s ease-in-out;
+    transform:translateX(-50%);
+	-webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+	-webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+}
+.colored:hover h3:after, h3:focus:after {
+width: 100%;
+}
+
+h1 {
+
+text-align: center;
+font-family: HP;
+font-size: 90px;
+padding: 2px 0;
+}
+
+#EnglishLessons:before {
+display: block;
+	content: "";
+	height: 55px;
+margin-top: -55px;
+}
+#Facts:before {
+display: block;
+	content: "";
+	height: 55px;
+margin-top: -55px;
+}
+#Actors:before {
+display: block;
+	content: "";
+	height: 55px;
+margin-top: -55px;
+}
+
+
+
+.act {
+height: 300px;
+width: 225px;
+background-repeat: no-repeat;
+float: left;
+transition-duration:0.96s;
+-webkit-transition-duration:0.96s;
+-moz-transition-duration:0.96s;
+-o-transition-duration:0.96s;
+-ms-transition-duration:0.96s;
+margin-right: 20px;
+border-radius: 10px 10px 30px 10px;
+}
+
+.act:after {
+transition-duration:0.96s;
+-webkit-transition-duration:0.96s;
+-moz-transition-duration:0.96s;
+-o-transition-duration:0.96s;
+-ms-transition-duration:0.96s;
+}
+
+.actor1 {
+background-image: url(img/harry1.jpg);
+}
+.actor1:hover {
+background-image: url(img/harry2.jpg);
+}
+.actor2 {
+background-image: url(img/ron1.jpg);
+}
+.actor2:hover {
+background-image: url(img/ron2.jpg);
+}
+.actor3 {
+background-image: url(img/emma1.jpg);
+}
+.actor3:hover {
+background-image: url(img/emma2.jpg);
+}
+.actor4 {
+background-image: url(img/drago1.jpg);
+}
+.actor4:hover {
+background-image: url(img/drago2.jpg);
+}
+.actor5 {
+background-image: url(img/ginny1.jpg);
+}
+.actor5:hover {
+background-image: url(img/ginny2.jpg);
+}
+.actor6 {
+background-image: url(img/maggie1.jpg);
+}
+.actor6:hover {
+background-image: url(img/maggie2.jpg);
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+
+
+<form class="form-inline my-2 my-lg-0"  style="margin-left: 10px;">
+		<input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+		<button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+	</form>
+	
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+</button>
+
+
+
+<div class="colapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav ml-auto" style="margin-right: 15px;">
+		<li class="nav-item active">
+			<a href="#" class="nav-link">Main</a>
+		</li>
+		<li class="nav-item active">
+			<a href="#EnglishLessons" class="nav-link">Lessons</a>
+		</li>
+		<li class="nav-item active">
+			<a href="#Facts" class="nav-link">Facts</a>
+		</li>
+		<li class="nav-item active">
+			<a href="#Actors" class="nav-link">Actors</a>
+		</li>
+		<!--<li class="nav-item active">
+			<a href="#" class="nav-link">News</a>
+		</li>-->
+		<li class="nav-item">
+			<a href="#" class="nav-link btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Login</a>
+
+		</li>
+	</ul>
+	
+</div>
+</nav>
+
+<div class="container-fluid p-0">
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+		<img src="img/img1.jpg" alt="" class="d-block w-100">
+		</div>
+		<div class="carousel-item">
+		<img src="img/img2.jpg" alt="" class="d-block w-100">
+		</div>
+		<div class="carousel-item">
+		<img src="img/img3.jpg" alt="" class="d-block w-100">
+		</div>
+		<div class="carousel-item">
+		<img src="img/img4.jpg" alt="" class="d-block w-100">
+		</div>
+		<div class="carousel-item">
+		<img src="img/img5.jpg" alt="" class="d-block w-100">
+		</div>
+	</div>
+	<a href="#carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
+	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	<span class="sr-only">Previous</span>
+	</a>
+	<a href="#carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="next">
+	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	<span class="sr-only">Next</span>
+	</a>
+	</div>
+</div>
+
+
+
+<div class="container-fluid less">
+	<div class="container"><span id="EnglishLessons"></span>
+	<h1>English Lessons</h1>
+	<div class="row">
+	<div class="col">
+		<div class="card text-center">
+			<div class="embed-responsive embed-responsive-16by9 card-img-top">
+		<iframe src="https://www.youtube.com/embed/joE-ANMPG5k" class="embed-responsive-item" allowfullscreen></iframe>
+	</div>
+			<div class="card-body">
+				<h4 class="card-title">Learn English With Harry Potter - Wingardium Leviosa</h4>
+				<p class="card-text">
+				Due to popular demand we are bringing you a new lesson from this funny scene from Harry Potter and the Philosopher's Stone where they learn the Wingardium Leviosa spell. You will learn useful British English pronunciation and vocabulary.
+				</p>
+				<a href="https://www.youtube.com/watch?v=joE-ANMPG5k&feature=emb_logo" class="btn btn-primary" target="_blank">
+				Push now</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col" style="margin-bottom: 20px;">
+		<div class="card text-center">
+			<div class="embed-responsive embed-responsive-16by9 card-img-top">
+		<iframe src="https://youtube.com/embed/703_pmFBcAk" class="embed-responsive-item" allowfullscreen></iframe>
+	</div>
+			<div class="card-body">
+				<h4 class="card-title">LEARN ENGLISH with Harry Potter — The Yule Ball</h4>
+				<p class="card-text">
+				Get ready to have a lot of fun as you learn English with the Goblet of Fire. This clip about the Yule Ball will also help you to learn a bit about English speaking culture and Christmas, and of course increase your vocabulary and improve your British pronunciation.
+				</p>
+				<a href="https://www.youtube.com/watch?v=703_pmFBcAk&t=20s" class="btn btn-primary" target="_blank">
+				Push now</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col">
+		<div class="card text-center">
+			<div class="embed-responsive embed-responsive-16by9 card-img-top">
+		<iframe src="https://www.youtube.com/embed/qZqSPOiV0Ac" class="embed-responsive-item" allowfullscreen></iframe>
+		
+	</div>
+			<div class="card-body">
+				<h4 class="card-title">Potion Class with Professor Snape | Learn English With Harry Potter</h4>
+				<p class="card-text">
+				You asked for it, so we made it for you! In this lesson you will learn English with Harry Potter and Professor Severus Snape in their first potion class together. This is full of great British English vocabulary and even pronunciation. Have a fun!
+				</p>
+				<a href="https://www.youtube.com/watch?v=qZqSPOiV0Ac" class="btn btn-primary" target="_blank">
+				Push now</a>
+			</div>
+		</div>
+	</div>
+	
+	</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="container"><span id="Facts"></span>
+		<h1>10 Interesting facts</h1>
+		
+		<div class="row text-center justify-content-center">
+			<div class="col-xs-12 col-sm-4 col-lg-3 colored"><img src="img/14.png" alt="" class="w-50" ><h3>Fact No# 1</h3>
+<p>On the 10 year anniversary of Harry’s parents’ death and the first time Voldemort was defeated, 31st October 1991, he and Ron saved Hermione from the troll in the bathroom. This is generally regarded as the day the trio became friends.</p></div>
+			<div class="col-xs-12 col-sm-4 col-lg-3 colored"><img src="img/12.png" alt="" class="w-50" ><h3>Fact No# 2</h3>
+<p>Harry's parents are soulmates because the patronus charm is a physical representation of one’s soul. James' is a stag and Lily's is a doe they are a perfect fit together. Professor Snape was in love with Lily, his patronus transformed into a doe when she died.</p></div>
+			<div class="col-xs-12 col-sm-4 col-lg-3 colored"><img src="img/13.png" alt="" class="w-50" ><h3>Fact No# 3</h3>
+<p>In Deathly Hallows, Harry notes that Ron and Hermione had fallen asleep holding hands. Hermione’s Patronus is an otter, which sleep holding hands with other otters. Incidentally, Ron’s Patronus is a Jack Russell Terrier, known for chasing otters.</p></div>
+			<div class="col-xs-12 col-sm-4 col-lg-3 colored"><img src="img/17.png" alt="" class="w-50" ><h3>Fact No# 4</h3>
+<p>While filming the kissing scene between the horcrux versions of Harry and Hermione in Deathly Hallows – Part 2 Ron had to be removed from set for laughing hysterically, he admitted, then he was in love with Emma Watson.</p></div>
+			<div class="col-xs-12 col-sm-4 col-lg-3 colored"><img src="img/21.png" alt="" class="w-50" ><h3>Fact No# 5</h3>
+<p>Luna Lovegood, Hogwarts's badass, leads an adventurous life after helping defeat Voldemort. She becomes a Magizoologist, a keeper and finder of fantastic beasts. It's fitting, then that Luna winds up with the grandson of another animal-loving oddball, Newt Scamander.</p></div>
+			<div class="col-xs-12 col-sm-4 col-lg-3 colored"><img src="img/22.png" alt="" class="w-50" ><h3>Fact No# 6</h3>
+<p>Forget Voldemort ― one-time Defense Against the Dark Arts professor Dolores Umbridge has been deemed one of fiction's creepiest villains by writer Stephen King. "Dolores Umbridge is the greatest make-believe villain to come along since Hannibal Lecter," King wrote in his review.</p></div>
+<div class="col-xs-12 col-sm-4 col-lg-3 colored"><img src="img/18.png" alt="" class="w-50"><h3>Fact No# 7</h3>
+<p>Rowling studied Classical languages and mythology at Exeter University, is familiar with Latin. Not only do the series' many spells come from that ancient language ― so does Hogwarts' motto, "Draco dormiens nunquam titillandus" ("Never tickle a sleeping dragon").</p></div>
+<div class="col-xs-12 col-sm-4 col-lg-3 colored"><img src="img/15.png" alt="" class="w-50"><h3>Fact No# 8</h3>
+<p>After graduation of Hogwarts, Minerva McGonagall fell in love with a Muggle boy. He proposed to her, she declined in fear of never being able to reveal her true. If she broke the International Statute of Secrecy, she would lose the job at the Ministry for which she was giving him up.</p></div>
+<div class="col-xs-12 col-sm-4 col-lg-3 colored"><img src="img/11.png" alt="" class="w-50"><h3>Fact No# 9</h3>
+<p>Ginny Weasley became a professional Quidditch player for the Holyhead Harpies, but eventually retired to take care of her children. She then became the senior Quidditch correspondent for the Daily Prophet.</p></div>
+<div class="col-xs-12 col-sm-4 col-lg-3 colored"><img src="img/25.png" alt="" class="w-50"><h3>Fact No# 10</h3>
+<p>Hermione began her post-Hogwarts career at the Department for the Regulation and Control of Magical Creatures to help improve the lives of house-elves, but then moved to the Department of Magical Law Enforcement.</p></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Autorization</h5>
+			<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+			<div class="container-fluid">
+				<form>
+				<div class="form-froup">
+					<label for="exampleInputEmail">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail" aria-describdby="emailHelp" placeholder="Email" required>
+					<small id="emailHelp" class="form-text text-muted">Enter your email</small>
+				</div>	
+				<div class="form-froup">
+					<label for="exampleInputPass">Password</label>
+					<input type="password" class="form-control" id="exampleInputPass" placeholder="Password" required>
+					<small id="passHelp" class="form-text text-muted">The password must be more than 6 symbols</small>
+				</div>	
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input">
+						Remember me
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Login</button>
+				</form>
+			</div>
+			</div>
+			</div>
+	</div>
+</div>
+
+
+<div class="container-fluid less" style="background-color: #eee;">
+<div class="container"><span id="Actors"></span>
+<h1>Actors</h1>
+	<div class="row p-2">
+		<div class="col">
+			<div class="act actor1"></div>
+			<h4>Harry Potter <br>(Daniel Radcliffe)</h4>
+			<p>The main star of the series, Daniel Radcliffe, jumped into the role in 2000 after he auditioned at the age of eleven. While at first, the actor and his parents were reluctant to accept the role, once Daniel became Harry Potter, his life was changed forever. Radcliffe basically grew up on the series, spending ten years working on eight films that brought him fame, fortune, and praise from critics. 
+			</p>
+		</div>
+		<div class="col">
+			<div class="act actor2"></div>
+			<h4>Ron Weasley <br>(Rupert Grint)</h4>
+			<p>Rupert Grint landed his lucky role of Ron Weasley in 2011 at the age of eleven. Not unlike the rest of the Golden trio, Grint was recognized for his acting and the series that took ten years of his life and launched a successful acting career. 
+			</p>
+		</div>
+	</div>
+	
+	<div class="row p-2">
+		<div class="col">
+			<div class="act actor3"></div>
+			<h4>Hermione Granger <br>(Emma Watson)</h4>
+			<p>One part of the main trio, Hermione Granger was brought to life by Emma Watson when she was only eleven. Just like Radcliffe, Watson spent ten years working on the Potter films that brought her popularity and international recognition. The actress also managed to split her time between acting and studying, acquiring a bachelor's degree in English literature.
+			</p>
+		</div>
+		<div class="col">
+			<div class="act actor4"></div>
+			<h4>Draco Malfoy <br>(Tom Felton)</h4>
+			<p>Although not part of the main trio, Tom Felton's Draco Malfoy had just as important a role in the films as Harry, Hermione, and Ron. Felton stepped into the Slytherin role when he was 14 and spent ten years working on the series. Acting as one of the series' villains, Felton won two consecutive MTV Movie Awards for Best Villain in 2010 and 2011.
+			</p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col">
+			<div class="act actor5"></div>
+			<h4>Ginny Weasley <br>(Bonnie Wright)</h4>
+			<p>When Bonnie Wright first stepped into the shoes of Ginny Weasley back in 2001, it didn't seem like her character or portrayal had much impact on the overall movie. It was only a brief scene where the focus lied on the anticipation of adventures. As Ginny's importance grew in the series, Wright showed more and more character in her portrayal, receiving praises from several critics.
+			</p>
+		</div>
+		<div class="col">
+			<div class="act actor6"></div>
+			<h4>Minerva McGonagall <br>(Maggie Smith)</h4>
+			<p>One of the biggest stars of the Harry Potter cast, Dame Maggie Smith. Before appearing on the big screens as professor Minerva McGonagall, Smith had a seemingly-endless list of roles on stage, film, and television. She was cast as the Head of Gryffindor and Head of Transfiguration, Minerva McGonagall in 2001 and appeared in seven of the eight films in the series. 
+			</p>
+		</div>
+	</div>
+
+</div>
+</div>
+
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="bootstrap-4.4.1/js/bootstrap.js"></script>
+<script src="bootstrap-4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
